@@ -1,1 +1,1 @@
-# Repository of my first Application WIFI 2022 
+# Repository of my first Application WIFI course 2022 
