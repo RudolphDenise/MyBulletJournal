@@ -1,0 +1,64 @@
+<h1 class=" display-3 mt-5 mb-5">Meine To-dos</h1>
+
+<section>
+  <div class="container border p5">
+    <form class="pb-5" action="/todo" method="POST">
+      <label class="form-label" for="fname">Neue Liste:</label>
+      <div class="input-group">
+        <button class="input-group-text"><i class="fa-solid fa-list-check"></i></button>
+        <input class="form-control" type="text" id="todolist" name="todolist">
+        <input id="todosubmit" class="btn btn-primary d-inline" type="submit" value="+">
+      </div>
+    </form>
+    <div class="accordion accordion-flush bg-dark " id="accordionFlushExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingOne">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+            <i class="fa-solid fa-list-check pe-3"></i>To-dos
+          </button>
+        </h2>
+        <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+          data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">
+            <div class="pb-2">
+              <form action="/" method="POST">
+                <label class="form-label" for="fname">Neue Aufgabe:</label>
+                <div class="input-group">
+                  <input class="form-control" type="text" id="fname" name="fname">
+                  <input id="todosubmit" class="btn btn-primary d-inline" type="submit" value="+">
+                </div>
+            </div>
+            <div class="input-group">
+              <input type="checkbox" class="btn-check" id="btn-check" autocomplete="off">
+              <label class="btn btn-primary" for="btn-check"><i class="fa-regular fa-square"></i></label>
+              <label class="form-control" for="fname"> ${todoContent}</label>
+              <button type="submit" class="input-group-text"><i class="fa-solid fa-trash"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="accordion-item">
+      <h2 class="accordion-header" id="flush-headingTwo">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+          Accordion Item #2
+        </button>
+      </h2>
+      <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="flush-headingThree">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+          Accordion Item #3
+        </button>
+      </h2>
+      <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+      </div>
+    </div> -->
+  </div>
+  </div>
+</section>

@@ -1,0 +1,37 @@
+<h1 class=" display-3 mt-5 mb-3">Meine To-dos</h1>
+
+
+
+<!-- <div  class=" mt-5 mb-3 d-flex  justify-content-center align-items-center iconoverview ">
+      <i class="  gradient-custom   rounded-circle justify-content-center align-items-center z-depth-2 bg-secondary fa-solid fa-list-check "
+          data-holder-rendered="true"></i>
+</div> -->
+
+
+<section class="container mb-5 ">
+  <div class="accordion" id="accordionPanelsStayOpenExample">
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+        <button class="accordion-button gradient-custom" type="button" data-bs-toggle="collapse"
+          data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+          <i class="fa-solid fa-list-check pe-3"></i>To-dos
+        </button>
+      </h2>
+      <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
+        aria-labelledby="panelsStayOpen-headingOne">
+        <div class="accordion-body">
+          <div class="pb-2">
+            <form action="/" method="POST">
+              <label class="form-label" for="fname">Neue Aufgabe:</label>
+              <div class="input-group">
+                <input class="form-control" type="text" id="newtask" name="newtask">
+                <input id="todosubmit" class="btn btn-calm-two d-inline" type="submit" value="+">
+              </div>
+            </form>
+          </div>
+          <div id="newTodoPos"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

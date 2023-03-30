@@ -1,0 +1,99 @@
+<h1 class=" mt-5 mb-5 display-3">Mein Journal</h1>
+
+
+<!--Dynamic Modal -->
+<div id="dynamicmodal"></div>
+
+
+
+
+<!--New Entry -->
+<section class=" mt-5 mb-2 container">
+    <!--Open New Entry -->
+    <div class=" mb-3 d-flex  justify-content-center align-items-center iconoverview">
+        <i id="feathericonbtn"
+            class=" gradient-custom justify-content-center align-items-center rounded-circle z-depth-2 bg-secondary fa-solid fa-feather-pointed "
+            type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions"
+            aria-controls="offcanvasWithBothOptions">
+        </i>
+    </div>
+
+    <!-- Change order select -->
+    <div class="container">
+        <select id="selectorder" class="form-select" aria-label="Default select example">
+            <option selected>Einträge ordnen</option>
+            <option value="oldestcustom">Ältester Eintrag</option>
+            <option value="neweststcustom">Neuster Eintrag</option>
+            <option value="namedes">alphabetisch</option>
+            <option value="nameasc">alphabetisch (rückwärts)</option>
+        </select>
+    </div>
+
+
+    <!-- NOFFCANVAS FRAME -->
+    <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
+        aria-labelledby="offcanvasWithBothOptionsLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Neuer Tagebucheintrag</h5>
+            <button id="btn-close" type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <!-- CONTET OFFCANVAS -->
+            <!-- Make Journal entrys -->
+
+
+            <section class="mt-5 mb-5 container">
+
+                <!--FORM -->
+                <form id="form" action="/" method="POST" class="container">
+                    <!--Title -->
+                    <div class="form-outline mb-4">
+                        <label class="form-label" for="jtitle">Titel</label>
+                        <input type="text" id="jtitle" class="form-control" />
+                    </div>
+                    <!-- Subtitle -->
+                    <div class="form-outline mb-4">
+                        <label class="form-label" for="jsubtitle2">Untertitel</label>
+                        <input type="text" id="jsubtitle" class="form-control" />
+                    </div>
+                    <div class="row">
+                        <!-- Date -->
+                        <div class="col form-outline mb-4">
+                            <label class="form-label" for="jdate">Datum</label>
+                            <input type="date" id="jdate" class="form-control" />
+                        </div>
+                        <!-- Journal Entry -->
+                        <div class="form-outline mb-4">
+                            <label class="form-label" for="jentry">Tagebucheintrag</label>
+                            <textarea class="form-control" id="jentry" rows="4"></textarea>
+                        </div>
+                        <!-- Submit button -->
+                        <button id="jbtn" type="submit" class="btn gradient-custom  mb-4"><i
+                                class="fa-solid fa-feather-pointed "></i></button>
+                </form>
+            </section>
+        </div>
+    </div>
+</section>
+
+<section class="mt-2 mb-5 container">
+    <div id="journalentryview">
+        <!-- <div class="card text-center">
+            <div class="card-header">
+                Featured
+            </div>
+            <div class="card-body">
+                <h5 class="display-5 card-title">Special title treatment</h5>
+                <p class="lead">
+                    This is a lead paragraph. It stands out from regular paragraphs.
+                </p>
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+
+            </div>
+            <div class="card-footer text-muted">
+                2 days ago
+            </div>
+        </div> -->
+    </div>
+</section>
